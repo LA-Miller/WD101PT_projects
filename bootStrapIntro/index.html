@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Intro to Bootstrap</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">EFA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#myTable">Movies</a>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="nav-link" href="#">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- TABLE -->
+    <div>
+        <table class="table table-dark table-striped table-hover" id="myTable">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Genre</th>
+                    <th scope="col">Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Step Brothers</td>
+                    <td>Comedy</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>Snatch</td>
+                    <td>Comedy</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>Black Hawk Down</td>
+                    <td>Action</td>
+                    <td>R</td>
+                </tr>
+                <tr>
+                    <td>Guardians of the Galaxy</td>
+                    <td>Action/Comedy</td>
+                    <td>PG-13</td>
+                </tr>
+                <tr>
+                    <td>Insidious</td>
+                    <td>Horror</td>
+                    <td>R</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Quick Info</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Welcome to my Bootstrap Practice Page
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <ul class="nav justify-content-center bg-dark">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://github.com/LA-Miller" target="_blank" rel="noreferrer">&copy; Luke Miller</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://getbootstrap.com/" target="_blank" rel="noreferrer">Bootstrap</a>
+        </li>
+    </ul>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+.nav {
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+
+.nav li a {
+    color: white;
+}
